@@ -1,0 +1,40 @@
+.placeholder {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.gridContainer {
+  width: 100%;
+  height: 100%;
+  &.popUpGrid{
+    //transition: opacity 0.8s;
+    background: #49355c;
+
+  }
+  &.popUpGrid .gridTile{
+    transition-timing-function: ease-in;
+
+    /* Quick on the way out */
+    opacity : 0;
+    //transform: translateY(130%);
+    transition: opacity 1s ease-in-out;
+  }
+  .gridTile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: center;
+  }
+}
+
+
+

@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
+@import './components/colors';
+
+body {
+  color: $lightGrey;
+  background: #f5f5f5;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 16px;
+  display: block;
+}
+
+.main {
+  overflow: hidden;
+}
+
+@import 'components/colors';
+@import 'components/slider';
+@import 'pages/contact';
+@import 'pages/home';
+@import 'pages/lavender-oil';
+@import 'components/buttons';
+@import 'components/navigation';
+@import 'components/message-form';
+
+

@@ -1,0 +1,243 @@
+.navbar-inverse {
+  padding: 10px 0;
+  background-color: #202020;
+  border: none;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  .navbar-toggle {
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+.navbar-fixed-top {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navbar-inverse {
+  .navbar-brand {
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    padding: 0;
+    margin: 6px 5px;
+
+    img{
+      height: 140%;
+      margin-left: 15px;
+      top: -11px;
+      float: left;
+      position: relative;
+      margin-right: 7px;
+    }
+  }
+  .navbar-nav {
+      margin: 6px 5px;
+    > {
+      li > a {
+        position: relative;
+        display: inline-block;
+        outline: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        font-size: 15px;
+        padding: 15px 15px 10px;
+        letter-spacing: 1px;
+        color: #f5f5f5;
+        font-weight: 400;
+        text-shadow: none;
+        -webkit-transition: color .3s;
+        -moz-transition: color .3s;
+        transition: color .3s;
+        &::before, &::after {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          content: '';
+          opacity: 0;
+          -webkit-transition: opacity .3s 0 .3s;
+          -moz-transition: opacity .3s 0 .3s;
+          transition: opacity .3s transform .3s;
+          -webkit-transform: translateY(-10px);
+          -moz-transform: translateY(-10px);
+          transform: translateY(-10px);
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+        }
+        &:hover::before, &:focus::before, &:hover::after, &:focus::after {
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          transform: translateY(0px);
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+        }
+        &::before {
+          top: 0;
+          -webkit-transform: translateY(-10px);
+          -moz-transform: translateY(-10px);
+          transform: translateY(-10px);
+          display: none;
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+        }
+        &::after {
+          bottom: 0;
+          -webkit-transform: translateY(10px);
+          -moz-transform: translateY(10px);
+          transform: translateY(10px);
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+        }
+        &::before, &::after {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          content: '';
+          opacity: 0;
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+          -webkit-transition: opacity .3s 0 .3s;
+          -moz-transition: opacity .3s 0 .3s;
+          transition: opacity .3s transform .3s;
+          -webkit-transform: translateY(-10px);
+          -moz-transform: translateY(-10px);
+          transform: translateY(-10px);
+        }
+      }
+      .active > a {
+        background-color: transparent;
+        &:hover, &:focus {
+          background-color: transparent;
+        }
+      }
+      .open > a {
+        background-color: transparent;
+        &:hover, &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+    .dropdown-menu {
+      background-color: #202020;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border: 0;
+      padding: 0;
+      margin-top: 15px;
+    }
+  }
+}
+
+.navbar-right .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+.navbar-inverse {
+  .navbar-nav .dropdown-menu > li {
+    > a {
+      padding: 8px 15px;
+      color: #efefef;
+    }
+    &:hover > a, &:focus > a, &.active > a {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    &:last-child > a {
+      border-radius: 0 0 3px 3px;
+    }
+    &.divider {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  .navbar-collapse, .navbar-form {
+    border-top: 0;
+  }
+}
+
+.opaqued {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.navbar-inverse.opaqued .navbar-nav .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+@media (max-width: 1000px) {
+  #main-slider { 
+    .carousel {
+      .boxed {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.65);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #main-slider { 
+    .carousel {     
+      
+      .boxed, .sub-main-title {
+        background-color: rgba(0, 0, 0, 0.65);
+        margin: 0;
+        padding: 5px;
+        color: white;
+      }
+
+      img.back-image{
+        width: 200%;      
+        left: -16em;      
+        position: relative;
+      }
+    }
+  }
+}
