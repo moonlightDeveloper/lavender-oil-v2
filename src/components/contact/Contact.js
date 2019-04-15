@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../../src/assets/images/logos.js';
 
 class Contact extends Component {
-
-    render() {
+  
+    render() {    
         return (
             <div id="lavender-slider" className="main">
             <section id="main-slider-contact" className="no-margin">
