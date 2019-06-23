@@ -1,9 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const Header = () => (
-
-    <header className="navbar navbar-inverse navbar-fixed-top " role="banner">
+const Header = () => {
+    const { t, i18n } = useTranslation();
+    const changeLanguage = lng => {
+        i18n.changeLanguage(lng);
+      };
+    return (
+        <header className="navbar navbar-inverse navbar-fixed-top " role="banner">
         <div className="container">
             <div className="navbar-header">
                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,9 +24,17 @@ const Header = () => (
                     <li><Link to='/lavenderOil'>Lavender Oil</Link></li>
                     <li><Link to='/contact'>contact</Link></li>
                 </ul>
+                <ul class="languagepicker">
+                    <a href="#nl"><li><img src="http://i65.tinypic.com/2d0kyno.png"/>Nederlands</li></a>
+                    <a href="#en"><li><img src="http://i64.tinypic.com/fd60km.png"/>English</li></a>
+                </ul>
             </nav>
+            <button onClick={() => changeLanguage('bg')}>bg</button>
+        <button onClick={() => changeLanguage('en')}>en</button>
         </div>
     </header>
-);
+    );
+    
+    };
 
 export default Header;

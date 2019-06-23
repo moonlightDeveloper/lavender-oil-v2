@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {HashRouter} from 'react-router-dom';
+import './i18n';
 import App from './App';
 import './assets/stylesheets/App.scss';
 import * as serviceWorker from './serviceWorker';
