@@ -15,14 +15,14 @@ const Header = () => {
                     <span className="sr-only">Toggle navigation</span>
                     <i className="fa fa-bars"></i>
                 </button>
-                <div className="navbar-brand"><img src="/logo.png" className="back-image" alt="not found"/><span
-                    className="pe-7s-gleam bounce-in"> EMONA</span></div>             
+                <div className="navbar-brand"><img src="/logoM.svg" className="back-image" alt="not found"/><span
+                    className="pe-7s-gleam bounce-in"></span></div>             
             </div>
             <nav className="collapse navbar-collapse">
                 <ul className="nav navbar-nav navbar-right">
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/lavenderOil'>Lavender Oil</Link></li>
-                    <li><Link to='/contact'>contact</Link></li>
+                    <li><Link to='/'>{t('navigation.home')}</Link></li>
+                    <li><Link to='/lavenderOil'>{t('navigation.lavenderOil')}</Link></li>
+                    <li><Link to='/contact'>{t('navigation.contact')}</Link></li>
                 </ul>
                 <ul class="languagepicker">
                     <a href="#nl"><li><img src="http://i65.tinypic.com/2d0kyno.png"/>Nederlands</li></a>

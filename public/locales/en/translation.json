@@ -1,3 +1,29 @@
 {
-    "welcome": "Welcome to React and react-i18next"
+    "welcome": "Welcome to React and react-i18next",
+    "navigation": {
+        "home": "Home",
+        "lavenderOil" : "Lavender oil",
+        "contact": "Contact"
+    },
+    "home": {
+        "lavender.oil.production": "Lavender oil - production",
+        "gold.of.bulgaria": "The gold of bulgaria",
+        "learn.more": "Learn more",
+        "header": {
+            "about.us": "A little about us",
+            "process": "The process",
+            "provide": "What we can provide",
+            "family": "Meet our family"
+        },
+        "about.us": {
+            "title": "Bulgaria scores of skilled farmers, a favorable climate and unspoiled fields provides a promising blend foressential oil producers",
+            "content": "We've growth surrounded by lands of richness which was the reason for us to founded our company more than 20 years ago. Inspired by passion and admiration of the nature we've decided to provide a way for people to be able to have a touch of its beauties. We've choose lavender due to it's benefits for our bodies used for both cosmetically and therapeutically methods. During the years we've taken care of the control for the whole process of manufacturing lavender oil including creation of plantations of particular varieties, proper care, mowing,transportation."
+        },
+        "process": {
+            "title": "Great ideas always have a beginning"
+        }
+
+
+    } 
+
 }
