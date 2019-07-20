@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from './Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../src/assets/images/logos.js';
 
 class ContactForm extends Component {
@@ -6,12 +7,14 @@ class ContactForm extends Component {
         super()
         this.state = {
             isFormVisible: false,
+            userName: '',
             feedback: '',
+            userMail: '',
+            userTelephone: '',
+            userCompany: '',
             formSubmitted: false
         };
     }
-
-    static sender = 'magdalena.e.ilieva@gmail.com';
 
     toggleForm = () => {
         const isVisible = this.state.isFormVisible;
@@ -26,37 +29,21 @@ class ContactForm extends Component {
 
     handleChange = event => {
         this.setState({
-            feedback: event.target.value
+            [event.target.name]: event.target.value
         });
     }
 
-    handleSubmit = event => {
-        event.preventDefault();
-     
-        const {
-            userId: receiverEmail,
-            templateId: template
-        } = this.props;
-
-        this.sendFeedback(
-            template,
-            this.sender,
-            receiverEmail,
-            this.state.feedback
-        );
-
-        this.setState({
-            formSubmitted: true
-        });
-    }
-
-    sendFeedback = (templateId, senderEmail, receiverEmail, feedback) => {
-        debugger;
+    handleSubmit = e => {
+        e.preventDefault();
+        const {templateId} = this.props      
         window.emailjs
-            .send('mailgun', templateId, {
-                senderEmail,
-                receiverEmail,
-                feedback
+            .send(
+                'mailgun', templateId, {
+                "user_name": this.state.userName,
+                "feedback": this.state.feedback,
+                "userMail": this.state.userMail,
+                "userTelephone": this.state.userTelephone,
+                "userCompany": this.state.userCompany
             })
             .then(res => {
                 this.setState({
@@ -66,7 +53,7 @@ class ContactForm extends Component {
             // Handle errors here however you like
             .catch(err => console.error('Failed to send feedback. Error: ', err));
     }
-
+  
 
     render() {
         return (
@@ -99,15 +86,14 @@ class ContactForm extends Component {
                         </div>
                         <div className="front">
                             <button onClick={() => this.toggleForm()} className="flip close">X</button>
-                            <form className="contact-form container" action=""  onSubmit={this.handleSubmit}>
-                                <input className="gutter" type="text"
-                                    placeholder="Name" />
-                                <input type="text" placeholder="Company" />
-                                <input className="gutter" type="text" placeholder="Telephone" />
-                                <input type="text" placeholder="Email" />
-                                <textarea name="" id="tx" placeholder="Leave a message"  value={this.state.feedback} onChange={this.handleChange}></textarea>
-                                <input type="submit" value="Send" />
-                            </form>
+                            <Form handleSubmit={this.handleSubmit} 
+                                  userName={this.state.userName}
+                                  handleChange={this.handleChange}
+                                  feedback={this.state.feedback}
+                                  userCompany={this.state.userCompany}
+                                  userTelephone={this.state.userTelephone}
+                                  userMail={this.state.userMail}                                  
+                                />                        
                         </div>
                     </div>
                 </div>
