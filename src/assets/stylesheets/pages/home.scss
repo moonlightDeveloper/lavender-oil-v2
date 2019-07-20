@@ -57,7 +57,7 @@
   margin: 0;
   padding: 0;
   background: none;
-  font-family: Georgia, serif;
+  font-family: 'TTNorms-Meduim';
   font-size: 1.5em;
   font-style: italic;
   line-height: 1.4 !important;
@@ -309,8 +309,9 @@ h2.main-title-header{
   
   &:hover .more-icon {
     display: block;
+    cursor: pointer;
     i{
-      padding: 0.6em;
+      padding: 0.6em 0.66em;
       border: 1px solid white;
       border-radius: 50%;
     }

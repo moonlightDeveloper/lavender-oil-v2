@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
     const { t, i18n } = useTranslation();
+    let swithToLang = i18n.language === 'bg' ? 'en' : 'bg';
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const changeLanguage = lng => {
         i18n.changeLanguage(lng);
       };
@@ -11,22 +13,24 @@ const Header = () => {
         <header className="navbar navbar-inverse navbar-fixed-top " role="banner">
         <div className="container">
             <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button onClick={()=>setMobileMenuOpen(!mobileMenuOpen)} type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span className="sr-only">Toggle navigation</span>
                     <i className="fa fa-bars"></i>
                 </button>
                 <div className="navbar-brand"><img src="/logoM.svg" className="back-image" alt="not found"/><span
                     className="pe-7s-gleam bounce-in"></span></div>             
             </div>
-            <nav className="collapse navbar-collapse">
+            <nav className={`${mobileMenuOpen ? '':'collapse'} navbar-collapse`}>
                 <ul className="nav navbar-nav navbar-right">
                     <li><Link to='/'>{t('navigation.home')}</Link></li>
                     <li><Link to='/lavenderOil'>{t('navigation.lavenderOil')}</Link></li>
                     <li><Link to='/contact'>{t('navigation.contact')}</Link></li>
-                <ul class="languagepicker">
-                    <a onClick={() => changeLanguage('bg')} ><li><img src="http://i65.tinypic.com/2d0kyno.png"/>BG</li></a>
-                    <a onClick={() => changeLanguage('en')} ><li><img src="http://i64.tinypic.com/fd60km.png"/>EN</li></a>
-                </ul>
+                    <li onClick={() => changeLanguage(swithToLang)} className="languagepicker-wrap">
+                        <ul className="languagepicker">
+                            <li><a><img src={`/flags/${swithToLang}.svg`}/>{swithToLang.toUpperCase()}</a></li>
+                        </ul>
+                    </li>
+               
                 </ul>
              
             </nav>

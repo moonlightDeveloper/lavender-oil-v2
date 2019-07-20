@@ -1,6 +1,6 @@
 .navbar-inverse {
   padding: 5px 0;
-  background-color: #202020;
+  background-color:$lavender;
   border: none;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -23,7 +23,7 @@
 
 .navbar-inverse {
   .navbar-brand {
-    font-family: Lato, sans-serif;
+    font-family: 'TTNorms-Regular';
     font-size: 30px;
     line-height: 50px;
     color: #fff;
@@ -41,7 +41,13 @@
   .navbar-nav {
       margin: 10px 5px;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
+      justify-content: flex-end;
+      @media (max-width: 768px) {
+        justify-content: center;
+        flex-direction: column-reverse;
+      }
+   
 
     > {
       li { 

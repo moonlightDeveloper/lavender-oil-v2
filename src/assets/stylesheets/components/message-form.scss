@@ -1,10 +1,10 @@
 //@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import '../components/colors';
+
 $red: #ff4d54;
 $white: #fff;
 
 a, p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'TTNorms-Regular';
 }
 
 section#contact {
@@ -237,6 +237,8 @@ section#contact {
     position: absolute;
     top: 15px;
     right: 3%;
+    text-shadow: none;
+    color:$black;
   }
 }
 

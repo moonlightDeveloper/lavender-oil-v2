@@ -14,9 +14,7 @@ class Home extends Component {
         return (
             <div id="home" className="main">
                 <HomeHeader />
-                <div className="natural-img-container-mobile">
-                    <img src="/natural.png" className="natural-img" alt="not found" />
-                </div>
+            
                 <div id="content-wrapper">
                     <div className="light-prpl">
                         <div className="container ">

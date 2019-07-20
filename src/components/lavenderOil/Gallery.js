@@ -39,11 +39,11 @@ class Gallery extends Component {
 
     renderPhotos = () => {
         return images.map((url, i) =>
-            <div key="url" className={RESPONSIVE_CLASS + ' img-animation'}>
+            <div key={i} className={RESPONSIVE_CLASS + ' img-animation'}>
                 <div className="center team-member" onClick={() => this.setState({ isOpen: true , photoIndex: i})}>
                     <div className="team-image">
                         <div className="front card">
-                            <span className="more-icon"><i class="fas fa-plus"></i></span>                                 
+                            <span className="more-icon"><i className="fas fa-plus"></i></span>                                 
                             <div className="production-img"
                                     style={{backgroundImage: `url(${url})`}} data-aos="flip-up"
                                     data-aos-delay="0" data-aos-duration="1000">

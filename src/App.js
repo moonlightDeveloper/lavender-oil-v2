@@ -13,7 +13,6 @@ const Loader = () => (
 
 class App extends Component {
   render() {
-    console.log(env);
     return (
       <Suspense fallback={Loader}>
         <div className="main">

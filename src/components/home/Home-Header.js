@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useRef} from "react";
 
 const HomeHeader =() =>  {
+    const section = useRef(null);
+    const scrollToMyRef = () => section.current.scrollIntoView({ behavior: 'smooth' });
+
         return (
             <section id="main-slider" className="no-margin">
                 <div className="carousel slide" data-ride="carousel">
@@ -10,9 +13,7 @@ const HomeHeader =() =>  {
                             <div className="container main-container">
                                 <div className="col-sm-12">
                                     <div className="carousel-content centered">
-                                        <h2 className="boxed animation animated-item-1 fade-down header-title">LAVENDER
-                                            OIL -
-                                            PRODUCTION</h2>
+                                        <h2 className="boxed animation animated-item-1 fade-down header-title">Lavender oil manufacturer</h2>
                                         <br/>
                                         <h3 className="sub-main-title"> The Gold Of
                                             Bulgaria</h3>
@@ -21,7 +22,7 @@ const HomeHeader =() =>  {
                                             <img src="/natural.png" className="natural-img" alt="not found"/>
                                         </div>
                                         <br/>
-                                        <a className="btn btn-md animation bounce-in" href="#services">Learn
+                                        <a onClick={()=>scrollToMyRef()} className="btn btn-md animation bounce-in">Learn
                                             More</a>
                                     </div>
                                 </div>
@@ -29,6 +30,7 @@ const HomeHeader =() =>  {
                         </div>
                     </div>
                 </div>
+                <div ref={section} ></div>
             </section>
         );
 }

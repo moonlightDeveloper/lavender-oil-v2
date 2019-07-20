@@ -4,18 +4,22 @@ import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../../src/assets/ima
 class Contact extends Component {
   
     render() {    
+    
+        const bg = require('../../assets/images/bg-map.svg')
         return (
             <div id="lavender-slider" className="main">
             <section id="main-slider-contact" className="no-margin">
-                    <img src="/map-bg.png" className="back-image-oil" alt="not found"/>  
-                    <div className="txt-container">
-                    <div className="container main-container">               
-                        <h2 className="header-title">
-                            BULGARIA
-                        </h2>
-                        <h3 className="sub">Dobrich</h3>
-                    </div>
-                    </div>       
+                    <img className='bg-map' src={bg}/>
+                    <div className="container absolute-centered">
+                        <div className="txt-container">
+                            <div  className="main-container">               
+                                <h2 className="header-title">
+                                    BULGARIA
+                                </h2>
+                                <h3 className="sub">Dobrich</h3>
+                            </div>
+                        </div>   
+                    </div>    
             </section>
             <div className="prpl-title border-hr">
                     <div className="container ">
@@ -59,5 +63,13 @@ class Contact extends Component {
     }
 }
 
-
 export default Contact;
+const bg = require('../../assets/images/bg-map.svg')
+
+const divStyle = {
+    backgroundImage:"url("+bg+")",
+    backgroundSize:'cover',
+    height:'100vh',
+    width:'100%',
+    backgroundPosition:'center center'
+  };
