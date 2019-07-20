@@ -1,13 +1,10 @@
 .languagepicker {
-	background-color: #FFF;
-	display: inline-block;
-	padding: 0;
-	height: 40px;
+	border: 1px solid #928a8a;
+    display: inline-block;
+    padding: 0;
+    height: 40px;
 	overflow: hidden;
-	transition: all .3s ease;
-	margin: 0 50px 10px 0;
-	vertical-align: top;
-	float: left;
+	cursor: pointer;
 }
 
 .languagepicker:hover {
@@ -16,7 +13,7 @@
 }
 
 .languagepicker a{
-	color: #000;
+	color: white;
 	text-decoration: none;
 }
 
@@ -27,13 +24,10 @@
 	border-top: 1px solid #EEE;
 }
 
-.languagepicker li:hover{
-	background-color: #EEE;
-}
+
 
 .languagepicker a:first-child li {
 	border: none;
-	background: #FFF !important;
 }
 
 .languagepicker li img {

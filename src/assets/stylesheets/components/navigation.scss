@@ -1,5 +1,5 @@
 .navbar-inverse {
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: #202020;
   border: none;
   -webkit-transition: all .5s ease-in-out;
@@ -27,22 +27,27 @@
     font-size: 30px;
     line-height: 50px;
     color: #fff;
+    margin: 8px 0;
     padding: 0;
-    margin: 6px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img{
-      height: 140%;
+      height: 100%;
       margin-left: 15px;
-      top: -11px;
-      float: left;
-      position: relative;
-      margin-right: 7px;
     }
   }
   .navbar-nav {
-      margin: 6px 5px;
+      margin: 10px 5px;
+      display: flex;
+      align-items: flex-end;
+
     > {
-      li > a {
+      li { 
+        padding-right: 10px;
+        
+        > a {
         position: relative;
         display: inline-block;
         outline: none;
@@ -133,6 +138,9 @@
           transform: translateY(-10px);
         }
       }
+    }
+
+
       .active > a {
         background-color: transparent;
         &:hover, &:focus {

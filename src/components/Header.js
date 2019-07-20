@@ -23,14 +23,13 @@ const Header = () => {
                     <li><Link to='/'>{t('navigation.home')}</Link></li>
                     <li><Link to='/lavenderOil'>{t('navigation.lavenderOil')}</Link></li>
                     <li><Link to='/contact'>{t('navigation.contact')}</Link></li>
-                </ul>
                 <ul class="languagepicker">
-                    <a href="#nl"><li><img src="http://i65.tinypic.com/2d0kyno.png"/>Nederlands</li></a>
-                    <a href="#en"><li><img src="http://i64.tinypic.com/fd60km.png"/>English</li></a>
+                    <a onClick={() => changeLanguage('bg')} ><li><img src="http://i65.tinypic.com/2d0kyno.png"/>BG</li></a>
+                    <a onClick={() => changeLanguage('en')} ><li><img src="http://i64.tinypic.com/fd60km.png"/>EN</li></a>
                 </ul>
+                </ul>
+             
             </nav>
-            <button onClick={() => changeLanguage('bg')}>bg</button>
-        <button onClick={() => changeLanguage('en')}>en</button>
         </div>
     </header>
     );
