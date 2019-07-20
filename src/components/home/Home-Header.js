@@ -18,7 +18,7 @@ const HomeHeader =() =>  {
                                             Bulgaria</h3>
                                         <br/> 
                                         <div className="natural-img-container">                                     
-                                            <img src="/natural.png" className="natural-img" alt="not found"/>
+                                            <img src="/natural.svg" className="natural-img" alt="not found"/>
                                         </div>
                                         <br/>
                                         <a className="btn btn-md animation bounce-in" href="#services">Learn
@@ -29,6 +29,7 @@ const HomeHeader =() =>  {
                         </div>
                     </div>
                 </div>
+                <img src="/natural.svg" className="natural-img-mobile" alt="not found" />
             </section>
         );
 }

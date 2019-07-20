@@ -122,26 +122,16 @@ h2.main-title-header{
     }
   }
 }
-.natural-img-container-mobile{
-  @media(max-width: 768px) {
-    width: 100%;
-    text-align: center;
-    background: $lightPurpl
-   
-   }
-   @media(min-width: 769px) {
+.natural-img-mobile{
+  @media(min-width: 769px) {
     display: none;
    }
+   position: absolute;
+   left: 15px;
+   bottom: 15px;
+
  
-  .natural-img{
-    @media(max-width: 768px) {
-      padding: 1em;     
-      height: 12em;
-      margin-top: 2em;
-      background: white;
-      border-radius: 50%;
-   }
-  }
+
 }
 
 
