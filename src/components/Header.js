@@ -23,7 +23,7 @@ const Header = () => {
             <nav className={`${mobileMenuOpen ? '':'collapse'} navbar-collapse`}>
                 <ul className="nav navbar-nav navbar-right">
                     <li><Link to='/'>{t('navigation.home')}</Link></li>
-                    <li><Link to='/lavenderOil'>{t('navigation.lavenderOil')}</Link></li>
+                    <li><Link to='/lavender-oil'>{t('navigation.lavenderOil')}</Link></li>
                     <li><Link to='/contact'>{t('navigation.contact')}</Link></li>
                     <li onClick={() => changeLanguage(swithToLang)} className="languagepicker-wrap">
                         <ul className="languagepicker">

@@ -3,8 +3,8 @@ import Form from './Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../src/assets/images/logos.js';
 
 class ContactForm extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             isFormVisible: false,
             userName: '',
@@ -38,13 +38,16 @@ class ContactForm extends Component {
         const {templateId} = this.props      
         window.emailjs
             .send(
-                'mailgun', templateId, {
-                "user_name": this.state.userName,
-                "feedback": this.state.feedback,
-                "userMail": this.state.userMail,
-                "userTelephone": this.state.userTelephone,
-                "userCompany": this.state.userCompany
-            })
+                'mailgun',
+                 templateId,
+                {
+                    "from_name": this.state.userName,
+                    "user_feedback": this.state.feedback,
+                    "user_mail": this.state.userMail,
+                    "user_telephone": this.state.userTelephone,
+                    "user_company": this.state.userCompany
+                }
+            )
             .then(res => {
                 this.setState({
                     formEmailSent: true

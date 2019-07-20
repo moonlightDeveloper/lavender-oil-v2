@@ -14,7 +14,6 @@ class Home extends Component {
         return (
             <div id="home" className="main">
                 <HomeHeader />
-            
                 <div id="content-wrapper">
                     <div className="light-prpl">
                         <div className="container ">

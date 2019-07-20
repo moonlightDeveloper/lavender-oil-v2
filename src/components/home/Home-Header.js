@@ -19,7 +19,7 @@ const HomeHeader =() =>  {
                                             Bulgaria</h3>
                                         <br/> 
                                         <div className="natural-img-container">                                     
-                                            <img src="/natural.png" className="natural-img" alt="not found"/>
+                                            <img src="/natural.svg" className="natural-img" alt="not found"/>
                                         </div>
                                         <br/>
                                         <a onClick={()=>scrollToMyRef()} className="btn btn-md animation bounce-in">Learn
@@ -31,6 +31,7 @@ const HomeHeader =() =>  {
                     </div>
                 </div>
                 <div ref={section} ></div>
+                <img src="/natural.svg" className="natural-img-mobile" alt="not found" />
             </section>
         );
 }

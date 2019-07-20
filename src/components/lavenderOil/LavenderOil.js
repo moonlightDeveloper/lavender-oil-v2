@@ -21,7 +21,7 @@ class LavenderOil extends Component {
             </section>
             <div id="content-wrapper">
             <SortsContent/>
-            <Gallery/> 
+            <Gallery/>             
             <ContactForm/>          
             </div>
         </div>
