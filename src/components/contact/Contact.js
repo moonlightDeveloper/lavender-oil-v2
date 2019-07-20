@@ -1,7 +1,56 @@
 import React, { Component } from 'react';
+import {env} from '../../config.js';
+import Form from '../Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../../src/assets/images/logos.js';
 
 class Contact extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+            isFormVisible: false,
+            userName: '',
+            feedback: '',
+            userMail: '',
+            userTelephone: '',
+            userCompany: '',
+            formSubmitted: false
+        };
+    }
+
+    handleChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    };
+
+    
+    handleSubmit = e => {
+        e.preventDefault();
+        const {REACT_APP_EMAILJS_TEMPLATEID : templateId} = env;
+   
+        window.emailjs
+            .send(
+                'mailgun',
+                 templateId,
+                {
+                    "from_name": this.state.userName,
+                    "user_feedback": this.state.feedback,
+                    "user_mail": this.state.userMail,
+                    "user_telephone": this.state.userTelephone,
+                    "user_company": this.state.userCompany
+                }
+            )
+            .then(res => {
+                this.setState({
+                    formEmailSent: true
+                });
+            })
+            // Handle errors here however you like
+            .catch(err => console.error('Failed to send feedback. Error: ', err));
+    }
+
+
   
     render() {    
         return (
@@ -42,15 +91,14 @@ class Contact extends Component {
             </div>
             </div>
                 <div className="cont-contactBtn col-sm-6 col-xs-12">
-                <form className="contact-form" action="">
-                                <input className="gutter" type="text"
-                                       placeholder="Name"/>
-                                <input type="text" placeholder="Company"/>
-                                <input className="gutter" type="text" placeholder="Telephone"/>
-                                <input type="text" placeholder="Email"/>
-                                <textarea name="" id="tx" placeholder="Leave a message"></textarea>
-                                <input type="submit" value="Send"/>
-                            </form>
+                <Form handleSubmit={this.handleSubmit} 
+                                  userName={this.state.userName}
+                                  handleChange={this.handleChange}
+                                  feedback={this.state.feedback}
+                                  userCompany={this.state.userCompany}
+                                  userTelephone={this.state.userTelephone}
+                                  userMail={this.state.userMail}                                  
+                                />  
                 </div>
             </section>
             </div>

@@ -3,8 +3,8 @@ import Form from './Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../src/assets/images/logos.js';
 
 class ContactForm extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             isFormVisible: false,
             userName: '',
