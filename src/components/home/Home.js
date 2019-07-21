@@ -4,15 +4,27 @@ import FamilyContent from "./Family-Content";
 import ManufacturingContent from "./Manufacturing-Content";
 import BenefitsContent from './Benefits-Content';
 import HomeHeader from './Home-Header';
-import { MailContext } from '../../config.js';
+import { MailContext, Config } from '../../config.js';
+import { useTranslation } from 'react-i18next';
 
+import Helmet from 'react-helmet';
 
-
-class Home extends Component {
-
-    render() {
+const Home = () => {   
+        const { t, i18n } = useTranslation();
         return (
             <div id="home" className="main">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>{t('seo.title.homepage')}</title>
+                    <meta name="description" content={t('seo.description.homepage')}/>
+                    <link rel="canonical" href={window.location.origin.toString()} />
+                    <meta property="og:type" content="article"/>
+                    <meta property="og:title" content={t('seo.title.homepage')} />
+                    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+                    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+                    <meta property="og:url" content={window.location.origin.toString()} />
+                    <meta property="og:site_name" content={Config.SITE_NAME} />
+                </Helmet>
                 <HomeHeader />
                 <div id="content-wrapper">
                     <div className="light-prpl">
@@ -61,8 +73,7 @@ class Home extends Component {
                     </MailContext.Consumer>
                 </div>
             </div>
-        );
-    }
+        )
 }
 
 

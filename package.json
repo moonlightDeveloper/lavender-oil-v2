@@ -19,7 +19,8 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.6.1",
-    "concurrently": "^3.1.0"
+    "concurrently": "^3.1.0",
+    "react-helmet": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

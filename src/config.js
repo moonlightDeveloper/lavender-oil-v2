@@ -9,3 +9,7 @@ export const env = {
 export const MailContext = React.createContext(
     env
 );
+
+export const Config = {
+    SITE_NAME :'Buy lavender oil from manufaturer'
+}

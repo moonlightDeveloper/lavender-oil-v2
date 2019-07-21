@@ -17,8 +17,12 @@ const Header = () => {
                     <span className="sr-only">Toggle navigation</span>
                     <i className="fa fa-bars"></i>
                 </button>
-                <div className="navbar-brand"><img src="/logoM.svg" className="back-image" alt="not found"/><span
-                    className="pe-7s-gleam bounce-in"></span></div>             
+                
+                <div className="navbar-brand">
+                    <Link to='/'>
+                        <img src="/logoM.svg" className="back-image" alt="not found"/>
+                    </Link>
+                </div>             
             </div>
             <nav className={`${mobileMenuOpen ? '':'collapse'} navbar-collapse`}>
                 <ul className="nav navbar-nav navbar-right">
