@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {env} from '../../config.js';
 import Form from '../Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../../src/assets/images/logos.js';
-
+const bg = require('../../assets/images/bg-map.svg');
 class Contact extends Component {
 
     constructor() {
@@ -49,12 +49,10 @@ class Contact extends Component {
             // Handle errors here however you like
             .catch(err => console.error('Failed to send feedback. Error: ', err));
     }
-
-
   
     render() {    
     
-        const bg = require('../../assets/images/bg-map.svg')
+   
         return (
             <div id="lavender-slider" className="main">
             <section id="main-slider-contact" className="no-margin">
@@ -112,7 +110,7 @@ class Contact extends Component {
 }
 
 export default Contact;
-const bg = require('../../assets/images/bg-map.svg')
+
 
 const divStyle = {
     backgroundImage:"url("+bg+")",

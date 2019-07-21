@@ -7,7 +7,7 @@ import LavenderOil from "./lavenderOil/LavenderOil";
 const Main = () => (
     <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/lavenderOil' component={LavenderOil}/>
+        <Route path='/lavender-oil' component={LavenderOil}/>
         <Route path='/contact' component={Contact}/>
     </Switch>
 );

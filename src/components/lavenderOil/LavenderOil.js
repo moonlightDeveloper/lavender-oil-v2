@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import SortsContent from './Sorts-Content';
 import Gallery from './Gallery';
 import ContactForm from '../Contact-Form';
+const lavenderBack = require("../../assets/images/gallery/lavender-back.jpg");
 
 class LavenderOil extends Component {
 
@@ -9,7 +10,7 @@ class LavenderOil extends Component {
         return (
         <div id="lavender lavender-slider" className="main">
             <section id="main-slider-lavender" className="no-margin">
-                    <img src="/woman-lavender.jpg" className="back-image-oil" alt="not found"/>  
+                    <img src={lavenderBack} className="back-image-oil" alt="not found"/>  
                     <div className="txt-container">
                     <div className="container main-container">               
                         <h2 className="header-title">

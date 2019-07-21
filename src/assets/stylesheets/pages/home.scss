@@ -113,7 +113,27 @@ h2.main-title-header{
 
 .sub-main-title{
   margin: 0;
+  color: white;
+  padding-left: 15px;
 }
+
+.about-us-image{
+  height: 400px;
+}
+
+.header-lav {
+  padding-right: 0;
+
+  @media(max-width: 600px) {
+    float: right;
+    text-align: right;
+  }
+
+}
+.manifacturer, .sub-main-title{
+  font-family: 'TTNorms-Thin';
+}
+
 
 .natural-img-container{
   .natural-img{

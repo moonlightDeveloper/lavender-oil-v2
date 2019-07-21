@@ -5,9 +5,7 @@ import ManufacturingContent from "./Manufacturing-Content";
 import BenefitsContent from './Benefits-Content';
 import HomeHeader from './Home-Header';
 import { MailContext } from '../../config.js';
-
-
-
+const theBoss = require("../../assets/images/gallery/theBoss.jpg");
 class Home extends Component {
 
     render() {
@@ -26,6 +24,7 @@ class Home extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className=" gap fade-down section-heading">
+                                    <img src={theBoss} className="about-us-image" alt="not found"/>
                                         <div className="testimonial-quote">
                                             <blockquote>
                                                 <p>Bulgaria scores of skilled farmers,
