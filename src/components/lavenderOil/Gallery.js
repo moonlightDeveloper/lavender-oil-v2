@@ -7,14 +7,15 @@ import AOS from "aos";
 const RESPONSIVE_CLASS = 'col-sm-6 col-xs-12 col-md-3';
 
 const images = [
-    "/gallery_1.jpg",
-    "/gallery_2.jpg",
-    "/gallery_3.jpg",
-    "/gallery_4.jpg",
-    "/gallery_5.jpg",
-    "/gallery_6.jpg",
-    "/gallery_7.jpg",
-    "/gallery_8.jpg"
+    {src: require("../../assets/images/gallery/gallery_1.jpg")},
+    {src: require("../../assets/images/gallery/gallery_2.jpg")},
+    {src: require("../../assets/images/gallery/gallery_3.jpg")},
+    {src: require("../../assets/images/gallery/gallery_4.jpg")},
+    {src: require("../../assets/images/gallery/gallery_5.jpg")},
+    {src: require("../../assets/images/gallery/gallery_6.jpg")},
+    {src: require("../../assets/images/gallery/gallery_7.jpg")},
+    {src: require("../../assets/images/gallery/gallery_8.jpg")},
+
 ];
 
 
@@ -38,14 +39,14 @@ class Gallery extends Component {
     }  
 
     renderPhotos = () => {
-        return images.map((url, i) =>
+        return images.map((img, i) =>
             <div key={i} className={RESPONSIVE_CLASS + ' img-animation'}>
                 <div className="center team-member" onClick={() => this.setState({ isOpen: true , photoIndex: i})}>
                     <div className="team-image">
                         <div className="front card">
                             <span className="more-icon"><i className="fas fa-plus"></i></span>                                 
                             <div className="production-img"
-                                    style={{backgroundImage: `url(${url})`}} data-aos="flip-up"
+                                    style={{backgroundImage: `url(${img.src})`}} data-aos="flip-up"
                                     data-aos-delay="0" data-aos-duration="1000">
                                       <div className="img-transperant"></div>
                                       <div className="img-gradient"></div>
@@ -73,9 +74,9 @@ class Gallery extends Component {
                 </div>  
                 {isOpen && (
                     <Lightbox
-                        mainSrc={images[photoIndex]}
-                        nextSrc={images[(photoIndex + 1) % images.length]}
-                        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                        mainSrc={images[photoIndex].src}
+                        nextSrc={images[(photoIndex + 1) % images.length].src}
+                        prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
                         onCloseRequest={() => this.setState({ isOpen: false })}
                         onMovePrevRequest={() =>
                         this.setState({

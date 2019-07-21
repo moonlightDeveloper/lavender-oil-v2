@@ -9,12 +9,7 @@
 
   img{
     width: 100%;
-    filter: saturate(1.5);
-    @media (max-width:768px) {
-      font-size: 2em;
-      margin-top: 2.4em;
-      width: 200%;
-    }   
+    margin-top: 3.3em;  
   }
   .txt-container{
     position: absolute;
@@ -169,7 +164,9 @@
 
   .boxed {
     padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    
     display: inline-block;
     text-transform: uppercase;
   }
