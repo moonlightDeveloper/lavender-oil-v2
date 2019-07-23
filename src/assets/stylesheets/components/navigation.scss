@@ -32,12 +32,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    img{
-      height: 100%;
-      margin-left: 15px;
-      display: block;
-    }
+  
+     a {
+       height: 100%;
+      img{
+        height: 100%;
+        margin-left: 15px;
+        display: block;
+      }
+    } 
   }
   .navbar-nav {
       margin: 10px 5px;

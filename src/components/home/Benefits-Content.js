@@ -36,21 +36,21 @@ class BenefitsContent extends React.Component {
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
                                                                    className="far fa-file-alt"/></span>
-                                    <h3>SERTIFICATE OF ANALYSIS</h3>
+                                    <h3>CERTIFICATE OF ANALYSIS</h3>
                                 </div>
                             </div>                          
                             <div className="col-md-3 col-xs-6">
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
-                                                                   className="fas fa-dollar-sign"/></span>
-                                    <h3>SAMPLE FOR TESTING</h3>
+                                                                   className="fas fa-vial"/></span>
+                                    <h3>TEST SAMPLE</h3>
                                 </div>
                             </div>
                             <div className="col-md-3 col-xs-6">
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
-                                                                   className="fas fa-phone-volume"/></span>
-                                    <h3>FAST REPLY</h3>
+                                                                   className="fas fa-user-check"/></span>
+                                    <h3>PERSONAL SERVICE</h3>
                                 </div>
                             </div>
                         </div>

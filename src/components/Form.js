@@ -4,7 +4,7 @@ import React from 'react';
 const Form = props => {
     const { handleSubmit, handleChange, userMail, userName, feedback, userCompany, userTelephone } = props;
 
-    return <form className="contact-form container" action="" onSubmit={handleSubmit}>
+    return <form className="contact-form" action="" onSubmit={handleSubmit}>
                 <input className="gutter" type="text"
                     placeholder="Name" name="userName" value={userName} onChange={handleChange} />
                 <input name="userCompany" type="text" placeholder="Company" onChange={handleChange} value={userCompany}/>

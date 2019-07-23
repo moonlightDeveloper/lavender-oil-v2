@@ -76,24 +76,26 @@ class Contact extends Component {
                   </div>
             <div id="content-wrapper">
             <section id="contact" className="container">
-            <div className="col-sm-6 col-xs-12">
-            <div className="share active">
-                <div className="fabs" src="/instagram-logo.svg"><InstagramLogo></InstagramLogo></div>
-                <div className="fabs"><FacebookLogo></FacebookLogo></div>
-                <div className="fabs"><GoogleLogo></GoogleLogo></div>
-                <div className="content">
-                 Company:  Emona 29
-                 <br/>
-                 Emil Iliev 
-                 <br/>
-                 Magdalena Ilieva 
-                 <br/>
-                 gmail: emona.bulgaria@gmail.com
+        
+            <div className="row">
+                <div className="col-sm-4 col-sm-12">
+                    <div className="share active">
+                        <div className="fabs" src="/instagram-logo.svg"><InstagramLogo></InstagramLogo></div>
+                        <div className="fabs"><FacebookLogo></FacebookLogo></div>
+                        <div className="fabs"><GoogleLogo></GoogleLogo></div>
+                        <div className="content">
+                        Company:  Emona 29
+                        <br/>
+                        Emil Iliev 
+                        <br/>
+                        Magdalena Ilieva 
+                        <br/>
+                        gmail: emona.bulgaria@gmail.com
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-                <div className="cont-contactBtn col-sm-6 col-xs-12">
-                <Form handleSubmit={this.handleSubmit} 
+                <div className="cont-contactBtn col-sm-8 col-sm-12">
+                    <Form handleSubmit={this.handleSubmit} 
                                   userName={this.state.userName}
                                   handleChange={this.handleChange}
                                   feedback={this.state.feedback}
@@ -102,6 +104,7 @@ class Contact extends Component {
                                   userMail={this.state.userMail}                                  
                                 />  
                 </div>
+            </div>
             </section>
             </div>
         </div>

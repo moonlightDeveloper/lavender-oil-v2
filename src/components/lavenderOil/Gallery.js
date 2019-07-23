@@ -15,6 +15,14 @@ const images = [
     {src: require("../../assets/images/gallery/gallery_6.jpg")},
     {src: require("../../assets/images/gallery/gallery_7.jpg")},
     {src: require("../../assets/images/gallery/gallery_8.jpg")},
+    {src: require("../../assets/images/gallery/gallery_9.jpg")},
+    {src: require("../../assets/images/gallery/gallery_10.jpg")},
+    {src: require("../../assets/images/gallery/gallery_11.jpg")},
+    {src: require("../../assets/images/gallery/gallery_12.jpg")},
+    {src: require("../../assets/images/gallery/gallery_13.jpg")},
+    {src: require("../../assets/images/gallery/gallery_14.jpg")},
+    {src: require("../../assets/images/gallery/gallery_15.jpg")},
+    {src: require("../../assets/images/gallery/gallery_16.jpg")},
 
 ];
 

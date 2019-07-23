@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import AOS from "aos";
 
 
-const RESPONSIVE_CLASS = 'col-sm-6 col-xs-12 col-md-3';
+const RESPONSIVE_CLASS = 'col-xs-12 col-md-6';
 
 class FamilyContent extends Component {
 
@@ -23,62 +23,42 @@ class FamilyContent extends Component {
                     <div className="gap fade-down section-heading">
                         <h2 className="prpl-title">Meet Our Family</h2>                       
                     </div>
-                    <div id="meet-the-team" className="row">
+                    <div id="meet-the-team" className="row grid">
                         <div className={RESPONSIVE_CLASS + ' img-animation'}>
-                            <div className="center team-member">
-                                <div className="team-image">
-                                    <div className="front card">
-                                        {/* <span>The guy who made it all possible</span> */}
-                                        <div className="production-img"
-                                             style={{backgroundImage: "url(/emil.jpg)"}} data-aos="flip-up"
-                                             data-aos-delay="0" data-aos-duration="1000">
-                                        </div>
-                                    </div>
-                                    <div className="back card"></div>
-                                </div>
-                            </div>
+                            <figure className="effect-bubba">
+                                <img src={"./emil.jpg"} className="about-us-image" alt="not found"/>
+                                    <figcaption>
+                                        <h2>Crazy <span>Layla</span></h2>
+                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                    </figcaption>			
+					            </figure>
                         </div>
                         <div className={RESPONSIVE_CLASS + ' img-animation'}>
-                            <div className="center team-member">
-                                <div className="team-image">
-                                    <div className="front card">
-                                        {/* <span>The woman who speaks with you</span> */}
-                                        <div className="production-img"
-                                             style={{backgroundImage: "url(/magdalena.jpg)"}} data-aos="flip-up"
-                                             data-aos-delay="100" data-aos-duration="1000">
-                                        </div>
-                                    </div>
-                                    <div className="back card"></div>
-                                </div>
-                            </div>
+                            <figure className="effect-bubba">
+                                <img src={"./magdalena.jpg"} className="about-us-image" alt="not found"/>
+                                    <figcaption>
+                                        <h2>Crazy <span>Layla</span></h2>
+                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                    </figcaption>			
+					        </figure>
                         </div>
                         <div className={RESPONSIVE_CLASS + ' img-animation'}>
-                            <div className="center team-member">
-                                <div className="team-image ">
-                                    <div className="front card">
-                                        {/* <span> The woman who prepare the documents</span> */}
-                                        <div className="production-img"
-                                             style={{backgroundImage: "url(/nadia.jpg)"}} data-aos="flip-up"
-                                             data-aos-delay="200" data-aos-duration="1000">
-                                        </div>
-                                    </div>
-                                    <div className="back card"></div>
-                                </div>
-                            </div>
+                            <figure className="effect-bubba">
+                                <img src={"./nadia.jpg"} className="about-us-image" alt="not found"/>
+                                    <figcaption>
+                                        <h2>Crazy <span>Layla</span></h2>
+                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                    </figcaption>			
+					        </figure>
                         </div>
                         <div className={RESPONSIVE_CLASS + ' img-animation'}>
-                            <div className="center team-member">
-                                <div className="team-image ">
-                                    <div className="front card">
-                                        {/* <span>The woman who control the oil production process</span> */}
-                                        <div className="production-img"
-                                             style={{backgroundImage: "url(/emona.jpg)"}} data-aos="flip-up"
-                                             data-aos-delay="300" data-aos-duration="1000">
-                                        </div>
-                                    </div>
-                                    <div className="back card"></div>
-                                </div>
-                            </div>
+                            <figure className="effect-bubba">
+                                <img src={"./emona.jpg"} className="about-us-image" alt="not found"/>
+                                    <figcaption>
+                                        <h2>Crazy <span>Layla</span></h2>
+                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                    </figcaption>			
+					        </figure>
                         </div>
                     </div>
                 </div>
