@@ -95,7 +95,8 @@ class ContactForm extends Component {
                                   feedback={this.state.feedback}
                                   userCompany={this.state.userCompany}
                                   userTelephone={this.state.userTelephone}
-                                  userMail={this.state.userMail}                                  
+                                  userMail={this.state.userMail}
+                                  isContainerStyle={this.props.isContainerStyle}                                  
                                 />                        
                         </div>
                     </div>

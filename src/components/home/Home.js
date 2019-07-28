@@ -81,7 +81,7 @@ const Home = () => {
                     <BenefitsContent />
                     <FamilyContent />
                     <MailContext.Consumer>
-                        { value => (<ContactForm userId={value.REACT_APP_EMAILJS_USERID} templateId={value.REACT_APP_EMAILJS_TEMPLATEID}/>)}
+                        { value => (<ContactForm userId={value.REACT_APP_EMAILJS_USERID} templateId={value.REACT_APP_EMAILJS_TEMPLATEID} isContainerStyle/>)}
                     </MailContext.Consumer>
                 </div>
             </div>

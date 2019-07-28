@@ -19,7 +19,11 @@ const HomeHeader =() =>  {
                                         <h3 className="sub-main-title"> The Gold Of <br/>
                                             Bulgaria</h3>
                                         <br/> 
-                                        {/* <div className="natural-img-container">                                     
+
+                                        <div id="section05">
+                                        <button onClick={()=>scrollToMyRef()}><div>Learn more</div><span></span></button>
+                                        </div>
+                                                                                {/* <div className="natural-img-container">                                     
                                             <img src="/natural.svg" className="natural-img" alt="not found"/>
                                         </div> */}
                                         <br/>

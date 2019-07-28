@@ -8,6 +8,15 @@
   margin-top: 60px;
 }
 
+.ril__caption{
+  display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.ril__image{
+  pointer-events: none;
+}
+
 .gridContainer {
   width: 100%;
   height: 100%;

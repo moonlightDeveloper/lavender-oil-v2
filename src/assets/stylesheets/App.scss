@@ -14,6 +14,9 @@ body {
 .main {
   overflow: hidden;
 }
+img {
+  pointer-events: none;
+}
 @import 'imageEffects';
 @import 'components/slider';
 @import 'pages/contact';

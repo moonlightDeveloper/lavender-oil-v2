@@ -19,10 +19,10 @@ const images = [
     {src: require("../../assets/images/gallery/gallery_10.jpg")},
     {src: require("../../assets/images/gallery/gallery_11.jpg")},
     {src: require("../../assets/images/gallery/gallery_12.jpg")},
-    {src: require("../../assets/images/gallery/gallery_13.jpg")},
-    {src: require("../../assets/images/gallery/gallery_14.jpg")},
-    {src: require("../../assets/images/gallery/gallery_15.jpg")},
-    {src: require("../../assets/images/gallery/gallery_16.jpg")},
+    {src: require("../../assets/images/gallery/gallery_13.jpg"), caption: `"ТРИВИВА" ООД - дестилерия за етерични масла Добрич`},
+    {src: require("../../assets/images/gallery/gallery_14.jpg"), caption: `"ТРИВИВА" ООД - дестилерия за етерични масла Добрич`},
+    {src: require("../../assets/images/gallery/gallery_15.jpg"), caption: `"ТРИВИВА" ООД - дестилерия за етерични масла Добрич`},
+    {src: require("../../assets/images/gallery/gallery_16.jpg"), caption: `"ТРИВИВА" ООД - дестилерия за етерични масла Добрич`},
 
 ];
 
@@ -86,11 +86,13 @@ class Gallery extends Component {
                         nextSrc={images[(photoIndex + 1) % images.length].src}
                         prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
                         onCloseRequest={() => this.setState({ isOpen: false })}
+                        imageCaption={!!images[photoIndex].caption && images[photoIndex].caption}
                         onMovePrevRequest={() =>
                         this.setState({
                             photoIndex: (photoIndex + images.length - 1) % images.length,
                         })
                         }
+                        enableZoom={false}
                         onMoveNextRequest={() =>
                         this.setState({
                             photoIndex: (photoIndex + 1) % images.length,

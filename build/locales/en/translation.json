@@ -20,10 +20,55 @@
             "content": "We've growth surrounded by lands of richness which was the reason for us to founded our company more than 20 years ago. Inspired by passion and admiration of the nature we've decided to provide a way for people to be able to have a touch of its beauties. We've choose lavender due to it's benefits for our bodies used for both cosmetically and therapeutically methods. During the years we've taken care of the control for the whole process of manufacturing lavender oil including creation of plantations of particular varieties, proper care, mowing,transportation."
         },
         "process": {
-            "title": "Great ideas always have a beginning"
+            "title": "Great ideas always have a beginning",
+            "best.sowed.seeds": "Best sowed seeds",
+            "manual.work": "Manual work guaranties quality",
+            "oil.extraction": "Oil extraction under strictly controlled conditions",
+            "oil.stored": "Lavender oil is stored and ready to use"
+        },
+        "provide": {
+            "natural.product": "100% natural product",
+            "certificate.of.analysis": "Certificate of analisis",
+            "test.sample": "Test sample",
+            "personal.service": "Personal service"
+        },
+        "family": {
+            "the": "the",
+            "end": "",
+            "who-f": "who",
+            "who-m": "who",
+            "the.guy.who": "The guy who",
+            "the.woman.who": "The woman who",
+            "made.it": "Made it all possible",
+            "speaks.with.you": "Speaks with you",
+            "prepare.the.documents": "Prepare the documents",
+            "control.the.process": "Controls the oil production process"
+        },
+        "contact": {
+            "us": "Contact us",
+            "Company": "Company",
+            "emil": "Emil Iliev",
+            "mail": "e-mail",
+            "name": "Name",
+            "telephone": "telephone",
+            "leave.a.message": "leave a message",
+            "is.required": "is required",
+            "went.wrong": "Something went wrong",
+            "try.again" : "Please try again",
+            "success": "The mail was successfully send. We will reach you back soon!",
+            "send": "send"
         }
-
-
-    } 
+    },
+    "oil": {
+        "lavender": "Lavender",
+        "oil": "oil",
+        "made.with": "Made with pinch of love!",
+        "see.gallery": "See gallery",
+        "our.sorts": "Our Lavender sorts",
+        "sevtopolis": "Sevtopolis",
+        "hebar": "hebar",
+        "hemus": "hemus",
+        "gallery": "gallery"
+    }
 
 }
