@@ -1,23 +1,17 @@
 import React from 'react';
 import AOS from 'aos';
+import { useTranslation } from 'react-i18next';
 
+const BenefitsContent = () => {
+    AOS.init();
 
-class BenefitsContent extends React.Component {
+    const { t } = useTranslation();
 
-    componentDidMount() {
-        AOS.init();
-    }
-
-    componentWillReceiveProps() {
-        AOS.refresh();
-    }
-
-    render() {
         return (
             <div className="light-prpl">
                 <div className="container">
                     <div className="gap fade-down section-heading">
-                        <h2 className="main-title">What We Can Provide</h2>
+                        <h2 className="main-title">{t('home-page.section3')}</h2>
                     </div>
                 </div>
 
@@ -29,28 +23,28 @@ class BenefitsContent extends React.Component {
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
                                                                    className="fas fa-award"/></span>
-                                    <h3>100% NATURAL PRODUCT</h3>
+                                    <h3>{t('home-page.section3.desk1')}</h3>
                                 </div>
                             </div>
                              <div className="col-md-3 col-xs-6">
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
                                                                    className="far fa-file-alt"/></span>
-                                    <h3>CERTIFICATE OF ANALYSIS</h3>
+                                    <h3>{t('home-page.section3.desk2')}</h3>
                                 </div>
                             </div>                          
                             <div className="col-md-3 col-xs-6">
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
                                                                    className="fas fa-vial"/></span>
-                                    <h3>TEST SAMPLE</h3>
+                                    <h3>{t('home-page.section3.desk3')}</h3>
                                 </div>
                             </div>
                             <div className="col-md-3 col-xs-6">
                                 <div className="center bounce-in">
                                     <span className="stat-icon"><i data-aos="flip-left" data-aos-duration="2000"
                                                                    className="fas fa-user-check"/></span>
-                                    <h3>PERSONAL SERVICE</h3>
+                                    <h3>{t('home-page.section3.desk4')}</h3>
                                 </div>
                             </div>
                         </div>
@@ -59,10 +53,6 @@ class BenefitsContent extends React.Component {
                 </section>
             </div>
         );
-    }
-
 }
-
-
 export default BenefitsContent;
 

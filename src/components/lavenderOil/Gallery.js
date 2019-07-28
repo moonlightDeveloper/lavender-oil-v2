@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { withTranslation } from 'react-i18next';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import AOS from "aos";
@@ -69,12 +70,13 @@ class Gallery extends Component {
 
     render() {
         const { photoIndex, isOpen } = this.state;
+        const {t} = this.props;
         return (
             <section className="gallery-section">
                 <div className="container">
                     <div className="gap"></div>
                     <div className="gap fade-down section-heading">
-                        <h2 className="prpl-title">Gallery</h2>                     
+                        <h2 className="prpl-title"> {t('oil-page.section2-title')}</h2>                     
                     </div>
                     <div id="meet-the-team" className="row">
                     {this.renderPhotos()}                        
@@ -106,4 +108,4 @@ class Gallery extends Component {
 }
 
 
-export default Gallery;
+export default withTranslation()(Gallery);

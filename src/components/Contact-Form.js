@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Form from './Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../src/assets/images/logos.js';
+import { withTranslation } from 'react-i18next';
+
 
 class ContactForm extends Component {
     constructor(props) {
@@ -59,6 +61,7 @@ class ContactForm extends Component {
   
 
     render() {
+        const {t} = this.props;
         return (
 
             <section id="contact">
@@ -75,13 +78,9 @@ class ContactForm extends Component {
                                         <div className="fabs"><FacebookLogo></FacebookLogo></div>
                                         <div className="fabs"><GoogleLogo></GoogleLogo></div>
                                         <div className="content">
-                                            Company:  Emona 29
+                                        {t('contact-form.company')}
                                     <br />
-                                            Emil Iliev
-                                    <br />
-                                            Magdalena Ilieva
-                                    <br />
-                                            gmail: emona.bulgaria@gmail.com
+                                        {t('contact-form.email')}
                                     </div>
                                     </div>
                                 </div>
@@ -101,15 +100,13 @@ class ContactForm extends Component {
                         </div>
                     </div>
                 </div>
-
             </section>
-
         );
     }
 }
 
 
-export default ContactForm;
+export default withTranslation()(ContactForm);
 
 
 
