@@ -17,8 +17,10 @@ body {
 img {
   pointer-events: none;
 }
+
 @import 'imageEffects';
 @import 'components/slider';
+@import 'components/cookie-msg';
 @import 'pages/contact';
 @import 'pages/home';
 @import 'pages/lavender-oil';
