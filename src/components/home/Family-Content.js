@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import AOS from "aos";
 
 
-const RESPONSIVE_CLASS = 'col-xs-12 col-md-6';
+const RESPONSIVE_CLASS = 'col-xs-12 col-sm-6 img-animation-family';
 
 class FamilyContent extends Component {
 
@@ -23,13 +23,15 @@ class FamilyContent extends Component {
                     <div className="gap fade-down section-heading">
                         <h2 className="prpl-title">Meet Our Family</h2>                       
                     </div>
-                    <div id="meet-the-team" className="row grid">
+                    <div id="meet-the-team" className="container-fluid grid">
                         <div className={RESPONSIVE_CLASS + ' img-animation'}>
                             <figure className="effect-bubba">
                                 <img src={"./emil.jpg"} className="about-us-image" alt="not found"/>
                                     <figcaption>
-                                        <h2>Crazy <span>Layla</span></h2>
-                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                        <h2>The <br/><span> Guy who</span>
+                                        <p>made it all possible</p>
+                                        </h2>
+                                    
                                     </figcaption>			
 					            </figure>
                         </div>
@@ -37,8 +39,10 @@ class FamilyContent extends Component {
                             <figure className="effect-bubba">
                                 <img src={"./magdalena.jpg"} className="about-us-image" alt="not found"/>
                                     <figcaption>
-                                        <h2>Crazy <span>Layla</span></h2>
-                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                        <h2>The  <br/><span> Woman who </span>
+                                        <p>speaks with you</p>
+                                        </h2>
+                                       
                                     </figcaption>			
 					        </figure>
                         </div>
@@ -46,8 +50,10 @@ class FamilyContent extends Component {
                             <figure className="effect-bubba">
                                 <img src={"./nadia.jpg"} className="about-us-image" alt="not found"/>
                                     <figcaption>
-                                        <h2>Crazy <span>Layla</span></h2>
-                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                        <h2>The <br/><span> woman who </span>
+                                          <p>prepare the documents</p>
+                                        </h2>
+                                     
                                     </figcaption>			
 					        </figure>
                         </div>
@@ -55,8 +61,10 @@ class FamilyContent extends Component {
                             <figure className="effect-bubba">
                                 <img src={"./emona.jpg"} className="about-us-image" alt="not found"/>
                                     <figcaption>
-                                        <h2>Crazy <span>Layla</span></h2>
-                                        <p>When Layla appears, she brings an eternal summer along.</p>
+                                        <h2>And  <br/> the<span> one who </span>
+                                           <p>control the oil production process</p>
+                                        </h2>
+                                      
                                     </figcaption>			
 					        </figure>
                         </div>

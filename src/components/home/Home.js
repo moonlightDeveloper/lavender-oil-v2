@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ContactForm from '../Contact-Form';
 import FamilyContent from "./Family-Content";
 import ManufacturingContent from "./Manufacturing-Content";

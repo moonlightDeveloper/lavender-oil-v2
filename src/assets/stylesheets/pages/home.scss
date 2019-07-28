@@ -7,6 +7,7 @@
   // box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
 }
 
+
 .white {
   background: #f8f8f8;
   padding: 20px 0;
@@ -258,6 +259,7 @@ h2.main-title-header{
 
       &:hover h5 {
         display: block;
+        font-family: 'TTNorms-Thin';
       }
       &:hover .img-gradient {
         background: rgba(37, 18, 56, 0.82);
@@ -397,6 +399,16 @@ h2.main-title-header{
 /*---------------*/
 /***** Layla *****/
 /*---------------*/
+.img-animation-family {
+  height: 350px;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+	  height: 200px;
+  }
+  @media screen and (max-width: 500px) {
+	  height: auto;
+	}
+}
 
 figure.effect-layla {
 	background: #18a367;
@@ -499,6 +511,8 @@ figure.effect-layla img {
 	transition-delay: 0.15s;
 }
 
+
+
 /* Common style */
 .grid figure {
 	position: relative;
@@ -507,7 +521,9 @@ figure.effect-layla img {
 	margin: 10px 1%;
 	background:$darkPurple;
 	text-align: center;
-	cursor: pointer;
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
 }
 
 .grid figure img {
@@ -524,8 +540,11 @@ figure.effect-layla img {
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  backface-visibility: hidden;
+
 }
+
+
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
@@ -552,7 +571,7 @@ figure.effect-layla img {
 }
 
 .grid figure h2 {
-	word-spacing: -0.15em;
+	word-spacing: 0.15em;
 	font-weight: 300;
 }
 
@@ -566,7 +585,8 @@ figure.effect-layla img {
 }
 
 .grid figure p {
-	letter-spacing: 1px;
+  letter-spacing: 1px;
+  text-transform: none;
 	font-size: 68.5%;
 }
 
