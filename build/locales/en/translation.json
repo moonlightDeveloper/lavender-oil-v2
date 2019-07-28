@@ -1,74 +1,81 @@
 {
-    "welcome": "Welcome to React and react-i18next",
     "navigation": {
         "home": "Home",
         "lavenderOil" : "Lavender oil",
-        "contact": "Contact"
+        "contact-1": "Contact"
     },
-    "home": {
-        "lavender.oil.production": "Lavender oil - production",
-        "gold.of.bulgaria": "The gold of bulgaria",
-        "learn.more": "Learn more",
+    "home.page": {
+        "main.title.first.line": "Lavender",
+        "main.title.second.line": "Lavender",
+        "main.subtitele1": "manifacturer",
+        "main.subtitle2.first.line": "The gold of",
+        "main.subtitle2.second.line": "Tbulgaria",
+        "button.more": "Learn more",
         "header": {
-            "about.us": "A little about us",
-            "process": "The process",
-            "provide": "What we can provide",
-            "family": "Meet our family"
+            "section1": "A little about us",
+            "section2": "The process",
+            "section3": "What we can provide",
+            "section4": "Meet our family"
         },
-        "about.us": {
-            "title": "Bulgaria scores of skilled farmers, a favorable climate and unspoiled fields provides a promising blend foressential oil producers",
-            "content": "We've growth surrounded by lands of richness which was the reason for us to founded our company more than 20 years ago. Inspired by passion and admiration of the nature we've decided to provide a way for people to be able to have a touch of its beauties. We've choose lavender due to it's benefits for our bodies used for both cosmetically and therapeutically methods. During the years we've taken care of the control for the whole process of manufacturing lavender oil including creation of plantations of particular varieties, proper care, mowing,transportation."
+        "section1": {
+            "title": "We've growth surrounded by lands of richness which was the reason for us to founded our company more than 15 years ago.",
+            "content": "Inspired by passion and admiration of the nature we've decided to provide a way for people to be able to have a touch of its beauties. We've choose lavender due to it's benefits for our bodies used for both cosmetically and therapeutically methods. During the years we've taken care of the control for the whole process of manufacturing lavender oil including creation of plantations of particular varieties, proper care, mowing,transportation."
         },
-        "process": {
+        "section2": {
             "title": "Great ideas always have a beginning",
-            "best.sowed.seeds": "Best sowed seeds",
-            "manual.work": "Manual work guaranties quality",
-            "oil.extraction": "Oil extraction under strictly controlled conditions",
-            "oil.stored": "Lavender oil is stored and ready to use"
+            "desc1": "Best sowed seeds",
+            "desc2": "Manual work guaranties quality",
+            "desc3": "Oil extraction under strictly controlled conditions",
+            "desc4": "Lavender oil is stored and ready to use"
         },
-        "provide": {
-            "natural.product": "100% natural product",
-            "certificate.of.analysis": "Certificate of analisis",
-            "test.sample": "Test sample",
-            "personal.service": "Personal service"
+        "section3": {
+            "desk1": "100% natural product",
+            "desk2": "Certificate of analisis",
+            "desk3": "Test sample",
+            "desk4": "Personal service"
         },
-        "family": {
-            "the": "the",
+        "section4": {
+            "title.first.line": "the",
             "end": "",
-            "who-f": "who",
-            "who-m": "who",
-            "the.guy.who": "The guy who",
-            "the.woman.who": "The woman who",
-            "made.it": "Made it all possible",
-            "speaks.with.you": "Speaks with you",
-            "prepare.the.documents": "Prepare the documents",
-            "control.the.process": "Controls the oil production process"
-        },
-        "contact": {
-            "us": "Contact us",
-            "Company": "Company",
-            "emil": "Emil Iliev",
-            "mail": "e-mail",
-            "name": "Name",
-            "telephone": "telephone",
-            "leave.a.message": "leave a message",
-            "is.required": "is required",
-            "went.wrong": "Something went wrong",
-            "try.again" : "Please try again",
-            "success": "The mail was successfully send. We will reach you back soon!",
-            "send": "send"
+            "title.second.line.end": "who",
+            "title2.second.line.end": "who",
+            "title.second.line": "The guy",
+            "title2.second.line": "The woman",
+            "subtitle1": "Made it all possible",
+            "subtitle2": "Speaks with you",
+            "subtitle3": "Prepare the documents",
+            "subtitle4": "Controls the oil production process"
         }
     },
-    "oil": {
-        "lavender": "Lavender",
-        "oil": "oil",
-        "made.with": "Made with pinch of love!",
-        "see.gallery": "See gallery",
-        "our.sorts": "Our Lavender sorts",
-        "sevtopolis": "Sevtopolis",
-        "hebar": "hebar",
-        "hemus": "hemus",
-        "gallery": "gallery"
+    "oil.page": {
+        "main.title.first.line": "Lavender",
+        "main.title.second.line": "oil",
+        "main.subtitle": "Made with pinch of love!",
+        "main.button": "See gallery",
+        "section1.title": "Our Lavender sorts",
+        "title1": "Sevtopolis",
+        "title2": "hebar",
+        "title3": "hemus",
+        "section2.title": "gallery"
+    },
+    "contact.page": {
+        "main.title": "Bulgaria",
+        "sub.title": "Dobrich",
+        "section.title": "Contact us"
+    },
+    "contact.form": {
+        "button": "Contact us",
+        "company": "Company",
+        "company.name": "Magy and Seo - M&S",
+        "mail": "e-mail",
+        "name": "Name",
+        "telephone": "telephone",
+        "textarea": "leave a message",
+        "required": "is required",
+        "form.error": "Something went wrong",
+        "try.again" : "Please try again",
+        "success": "The mail was successfully send. We will reach you back soon!",
+        "send": "send"
     }
 
 }

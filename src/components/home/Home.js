@@ -1,16 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import ContactForm from '../Contact-Form';
 import FamilyContent from "./Family-Content";
 import ManufacturingContent from "./Manufacturing-Content";
 import BenefitsContent from './Benefits-Content';
 import HomeHeader from './Home-Header';
 import { MailContext, Config } from '../../config.js';
-import { useTranslation } from 'react-i18next';
+
 
 import Helmet from 'react-helmet';
 
 const Home = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const theBoss = require("../../assets/images/gallery/theBoss.jpg");
         return (
@@ -31,7 +32,7 @@ const Home = () => {
                 <div id="content-wrapper">
                     <div className="light-prpl">
                         <div className="container ">
-                            <h2 className="main-title">A Little About Us</h2>
+                            <h2 className="main-title">{t('home-page.header.section1')}</h2>
                         </div>
                     </div>
                     <section id="about-us" className="white">
@@ -42,24 +43,12 @@ const Home = () => {
                                     <div className=" gap fade-down section-heading">
                                         <div className="testimonial-quote">
                                             <blockquote>
-                                                <p>Bulgaria scores of skilled farmers,
-                                                    a favorable climate and unspoiled fields provides a promising blend
-                                                    for
-                                                    essential oil producers”</p>
+                                                <p>{t('home-page.section1.title')}”</p>
                                             </blockquote>
                                         </div>
                                         <br />
                                         <p>
-                                            We've growth surrounded by lands of richness which was the reason for us to
-                                            founded our company more than 20 years ago. Inspired by passion and
-                                            admiration of the nature we've decided
-                                            to provide a way for people to be able to have a touch of its beauties.
-                                            We've choose lavender due to it's benefits for our bodies used for both
-                                            cosmetically and therapeutically methods.
-                                            During the years we've taken care of the control for the whole process of
-                                            manufacturing lavender oil including
-                                            creation of plantations of particular varieties, proper care, mowing,
-                                            transportation. Our goal is to meet customer demands.
+                                        {t('home-page.section1.content')}
                                         </p>
                                     </div>
                                 </div>
@@ -67,9 +56,7 @@ const Home = () => {
                                 <figure className="effect-layla">
                                 <img src={theBoss} className="about-us-image" alt="not found"/>
                                     <figcaption>
-                                        <h2>Crazy <span>Layla</span></h2>
-                                        <p>When Layla appears, she brings an eternal summer along.</p>
-                                        <a href="#">View more</a>
+                                        <p>{t('home-page.section1.second-quotes')}</p>
                                     </figcaption>			
 					            </figure>
                                 </div>

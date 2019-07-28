@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 import {env} from '../../config.js';
 import Form from '../Form.js';
 import { InstagramLogo, FacebookLogo, GoogleLogo } from '../../../src/assets/images/logos.js';
 const bg = require('../../assets/images/bg-map.svg');
+
+
 class Contact extends Component {
 
     constructor() {
@@ -17,6 +20,8 @@ class Contact extends Component {
             formSubmitted: false
         };
     }
+
+
 
     handleChange = event => {
         this.setState({
@@ -51,7 +56,7 @@ class Contact extends Component {
     }
   
     render() {    
-    
+        const {t} = this.props;
    
         return (
             <div id="lavender-slider" className="main">
@@ -61,9 +66,9 @@ class Contact extends Component {
                         <div className="txt-container">
                             <div  className="main-container">               
                                 <h2 className="header-title">
-                                    BULGARIA
+                                {t('contact-page.main-title')}
                                 </h2>
-                                <h3 className="sub">Dobrich</h3>
+                                <h3 className="sub"> {t('contact-page.sub-title')}</h3>
                             </div>
                         </div>   
                     </div>    
@@ -84,13 +89,9 @@ class Contact extends Component {
                         <div className="fabs"><FacebookLogo></FacebookLogo></div>
                         <div className="fabs"><GoogleLogo></GoogleLogo></div>
                         <div className="content">
-                        Company:  Emona 29
+                        {t('contact-form.company')}
                         <br/>
-                        Emil Iliev 
-                        <br/>
-                        Magdalena Ilieva 
-                        <br/>
-                        gmail: emona.bulgaria@gmail.com
+                        {t('contact-form.email')}
                         </div>
                     </div>
                 </div>
@@ -112,7 +113,7 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default  withTranslation()(Contact);;
 
 
 const divStyle = {
