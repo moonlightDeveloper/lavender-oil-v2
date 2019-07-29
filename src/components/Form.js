@@ -13,6 +13,8 @@ const Form = props => {
                 <input name="userTelephone" className="gutter" type="text" placeholder={`${t('contact-form.telephone')}`} value={userTelephone} onChange={handleChange} />
                 <input type="text" placeholder={`${t('contact-form.mail-label')}`} value={userMail} name="userMail" onChange={handleChange} />
                 <textarea name="feedback" id="tx" placeholder={`${t('contact-form.textarea')}`}  value={feedback} onChange={handleChange}></textarea>
+                <div class="g-recaptcha" data-sitekey="6LcM768UAAAAALhJLZjbcApG7UzZuoft9kArifqP"></div>
+                <br/>
                 <input type="submit" value={`${t('contact-form.send')}`} />
             </form>
 };
