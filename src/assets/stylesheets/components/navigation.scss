@@ -49,10 +49,8 @@
       justify-content: flex-end;
       @media (max-width: 768px) {
         justify-content: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
-   
-
     > {
       li { 
         padding-right: 10px;

@@ -17,6 +17,11 @@ body {
 img {
   pointer-events: none;
 }
+p, h1, h2, h3, h4, h5, span {
+  letter-spacing: 1px;
+  font-variant-ligatures: no-common-ligatures;
+}
+
 @import 'imageEffects';
 @import 'components/slider';
 @import 'pages/contact';
