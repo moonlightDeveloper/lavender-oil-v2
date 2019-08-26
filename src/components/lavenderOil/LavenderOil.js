@@ -3,7 +3,8 @@ import Helmet from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import SortsContent from './Sorts-Content';
 import Gallery from './Gallery';
-import ContactForm from '../Contact-Form';
+import ContactFormContainer from '../Contact-Form-Container';
+import ContactUs from '../Contact-Us';
 import { Config } from '../../config.js';
 
 const lavenderBack = require("../../assets/images/gallery/lavender-back.jpg");
@@ -44,7 +45,8 @@ const LavenderOil = () => {
             <div id="content-wrapper">
                 <SortsContent />
                 <Gallery />
-                <ContactForm isContainerStyle />
+                <ContactFormContainer />
+                <ContactUs />
             </div>
         </div>
     );

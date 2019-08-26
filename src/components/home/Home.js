@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import ContactForm from '../Contact-Form';
+import ContactFormContainer from '../Contact-Form-Container';
 import FamilyContent from "./Family-Content";
 import ManufacturingContent from "./Manufacturing-Content";
 import BenefitsContent from './Benefits-Content';
 import HomeHeader from './Home-Header';
-import { MailContext, Config } from '../../config.js';
+import { Config } from '../../config.js';
+import ContactUs from '../Contact-Us';
 import Helmet from 'react-helmet';
 
 const Home = () => {
@@ -65,9 +66,8 @@ const Home = () => {
                     <ManufacturingContent />
                     <BenefitsContent />
                     <FamilyContent />
-                    <MailContext.Consumer>
-                        { value => (<ContactForm userId={value.REACT_APP_EMAILJS_USERID} templateId={value.REACT_APP_EMAILJS_TEMPLATEID} isContainerStyle/>)}
-                    </MailContext.Consumer>
+                    <ContactFormContainer />
+                    <ContactUs />              
                 </div>
             </div>
         )
