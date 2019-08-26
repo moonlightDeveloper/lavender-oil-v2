@@ -94,7 +94,6 @@ class Gallery extends Component {
                             photoIndex: (photoIndex + images.length - 1) % images.length,
                         })
                         }
-                        enableZoom={false}
                         onMoveNextRequest={() =>
                         this.setState({
                             photoIndex: (photoIndex + 1) % images.length,
