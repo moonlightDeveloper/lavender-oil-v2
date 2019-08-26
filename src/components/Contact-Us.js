@@ -15,7 +15,9 @@ const ContactUs = () => {
                 <div className="content">
                     {t('contact-form.company')}
                     <br />
-                    {t('contact-form.email')}
+                    <a href={`mailto:${t('contact-form.email')}`}>{t('contact-form.email')}</a>
+                    <br />
+                    <a href={`tel:${t('contact-form.contact-phone')}`}>{t('contact-form.contact-phone')}</a>
                 </div>
             </div>
         </div>
