@@ -25,7 +25,7 @@
         "section2": {
             "title": "Great ideas always have a beginning",
             "desc1": "Best sowed seeds",
-            "desc2": "Manual work guaranties quality",
+            "desc2": "Qualified workers ensure product quality",
             "desc3": "Oil extraction under strictly controlled conditions",
             "desc4": "Lavender oil is stored and ready to use"
         },
@@ -43,8 +43,8 @@
             "title3-second-line": "one who",
             "subtitle1": "Made it all possible",
             "subtitle2": "Speaks with you",
-            "subtitle3": "Prepare the documents",
-            "subtitle4": "Controls the oil production process"
+            "subtitle3": "Prepare your documents",
+            "subtitle4": "Controls the oil extraction process"
         }
     },
     "oil-page": {
@@ -64,14 +64,14 @@
         "section-title": "Contact us"
     },
     "contact-form": {
-        "button": "Contact us",
-        "company": "Company: Maggy and Seo - M&S",
+        "main-title": "Contact us",
+        "company": "Company: M&S",
         "email": "E-mail: sales@lavender-oil.eu",
         "mail-label": "Email",
         "name-label": "Name",
         "company-label": "Company",
-        "telephone": "telephone",
-        "textarea": "leave a message",
+        "telephone": "Telephone",
+        "textarea": "Leave a message",
         "required": "is required",
         "form-error": "Something went wrong",
         "try-again" : "Please try again",
@@ -80,12 +80,12 @@
     },
     "seo":{
         "title":{
-            "homepage":"Lavender oil from manifacturer",
-            "oilPage":"Lavender oil manifacturing in Bulgaria",
-            "contactPage": "Lavender oil manifacturer contacts"
+            "homepage":"Lavender oil from manufacturer",
+            "oilPage":"Lavender oil manufacturing in Bulgaria",
+            "contactPage": "Lavender oil manufacturer contacts"
         },
         "description":{
-            "homepage":"High quality lavender oil from manifacturer, competitive pricing",
+            "homepage":"High quality lavender oil from manufacturer, competitive pricing",
             "oilPage":"100% pure natural lavender oil, therapeutic qualities, International shipping.",
             "contactPage": "100% pure natural lavender oil, therapeutic qualities, International shipping."
         }

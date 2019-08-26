@@ -18,10 +18,6 @@
   color: white;
 }
 
-#content-wrapper section {
-  padding-top: 30px; 
-
-}
 
 #footer-wrapper {
   z-index: 1;
@@ -115,7 +111,7 @@ h2.main-title-header{
 .sub-main-title{
   margin: 0;
   color: white;
-  padding-left: 15px;
+  padding: 15px 0;
 }
 
 
@@ -467,7 +463,9 @@ figure.effect-layla p {
 	text-transform: none;
 	opacity: 0;
 	-webkit-transform: translate3d(0,-10px,0);
-	transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
+  color:#fff;
+  font-size: 24px;
 }
 
 figure.effect-layla img,
@@ -588,7 +586,8 @@ figure.effect-layla img {
 .grid figure p {
   letter-spacing: 1px;
   text-transform: none;
-	font-size: 68.5%;
+  font-size: 100%;
+  color:#fff;
 }
 
 // Scroll arrow
@@ -649,6 +648,10 @@ figure.effect-layla img {
 #section05 button.black span{
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+.main-title {
+  padding: 20px 0;
 }
 
 

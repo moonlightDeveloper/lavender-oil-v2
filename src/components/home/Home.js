@@ -41,14 +41,14 @@ const Home = () => {
                                 <div className="col-md-6">
                                     <div className=" gap fade-down section-heading">
                                         <div className="testimonial-quote">
-                                            <blockquote>
-                                                <p>{t('home-page.section1.title')}”</p>
-                                            </blockquote>
+                                            
+                                         <h4 style={{lineHeight:"25px", fontWeight:"bold"}}>{t('home-page.section1.title')}</h4>
+                                            
                                         </div>
                                         <br />
-                                        <p>
+                                        <h5 style={{lineHeight:"25px", fontSize:"16px"}}>
                                         {t('home-page.section1.content')}
-                                        </p>
+                                        </h5>
                                     </div>
                                 </div>
                                 <div className="col-md-6 text-center grid">

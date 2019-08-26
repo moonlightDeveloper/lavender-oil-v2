@@ -15,7 +15,7 @@ const Loader = () => (
 class App extends Component {
   render() {
     return (
-      <Suspense fallback={Loader}>
+      <Suspense fallback={<Loader/>}>
         <div className="main">
         <Header />
         <MailContext.Provider value={env}>
