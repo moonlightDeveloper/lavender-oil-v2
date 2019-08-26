@@ -73,10 +73,12 @@
         "telephone": "telephone",
         "textarea": "leave a message",
         "required": "is required",
-        "form-error": "Something went wrong",
+        "form-error": "Something went wrong. Please try again",
         "try-again" : "Please try again",
         "success": "The mail was successfully send. We will reach you back soon!",
-        "send": "send"
+        "send": "Send",
+        "send-new": "Изпрати ново съобщение"
+     
     },
     "seo":{
         "title":{
