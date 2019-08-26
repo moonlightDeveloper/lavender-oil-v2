@@ -19,12 +19,26 @@ class ContactFormContainer extends Component {
     }
 
     handleChange = event => {
+    
+
         this.setState({
             [event.target.name]: event.target.value
-        });
-
-        
+        }, () =>{this.validate()})
     };
+
+    validate = () => {
+        let formError = true;
+        const {userName, feedback, userMail, userTelephone} = this.state;
+        debugger
+        if(userName !== '' && feedback !== '' && userMail !== '' && userTelephone !== '') {
+            formError = false;
+        } else {
+            formError = true
+        }    
+        this.setState({
+            formError
+        })
+    }
 
     handleSubmit = e => {
         e.preventDefault();
