@@ -22,6 +22,8 @@ class ContactFormContainer extends Component {
         this.setState({
             [event.target.name]: event.target.value
         });
+
+        
     };
 
     handleSubmit = e => {
@@ -58,7 +60,7 @@ class ContactFormContainer extends Component {
 
     render() {
         return (
-            <Form handleSubmit={this.handleSubmit} 
+            <Form handleSubmit={this.handleSubmit}
                     formError={this.state.formError}
                     userName={this.state.userName}
                     onBlur={this.onBlur}
@@ -66,8 +68,7 @@ class ContactFormContainer extends Component {
                     feedback={this.state.feedback}
                     userCompany={this.state.userCompany}
                     userTelephone={this.state.userTelephone}
-                    userMail={this.state.userMail}
-                    isContainerStyle={this.props.isContainerStyle}                                  
+                    userMail={this.state.userMail}                                               
                 />
         );
     }
