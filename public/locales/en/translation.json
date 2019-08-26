@@ -77,6 +77,17 @@
         "try-again" : "Please try again",
         "success": "The mail was successfully send. We will reach you back soon!",
         "send": "send"
+    },
+    "seo":{
+        "title":{
+            "homepage":"Lavender oil from manifacturer",
+            "oilPage":"Lavender oil manifacturing in Bulgaria",
+            "contactPage": "Lavender oil manifacturer contacts"
+        },
+        "description":{
+            "homepage":"High quality lavender oil from manifacturer, competitive pricing",
+            "oilPage":"100% pure natural lavender oil, therapeutic qualities, International shipping.",
+            "contactPage": "100% pure natural lavender oil, therapeutic qualities, International shipping."
+        }
     }
-
 }

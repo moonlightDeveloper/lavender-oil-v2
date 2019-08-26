@@ -6,8 +6,6 @@ import ManufacturingContent from "./Manufacturing-Content";
 import BenefitsContent from './Benefits-Content';
 import HomeHeader from './Home-Header';
 import { MailContext, Config } from '../../config.js';
-
-
 import Helmet from 'react-helmet';
 
 const Home = () => {
@@ -23,7 +21,7 @@ const Home = () => {
                     <link rel="canonical" href={window.location.origin.toString()} />
                     <meta property="og:type" content="article"/>
                     <meta property="og:title" content={t('seo.title.homepage')} />
-                    <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
+                    <meta property="og:description" content={t('seo.description.homepage')}/>
                     <meta property="og:image" content="LINK TO THE IMAGE FILE" />
                     <meta property="og:url" content={window.location.origin.toString()} />
                     <meta property="og:site_name" content={Config.SITE_NAME} />

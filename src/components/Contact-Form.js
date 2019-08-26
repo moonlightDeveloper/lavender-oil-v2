@@ -8,19 +8,15 @@ class ContactForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            isFormVisible: false,
+            isFormVisible: true,
             userName: '',
             feedback: '',
             userMail: '',
             userTelephone: '',
             userCompany: '',
-            formSubmitted: false
+            formSubmitted: false,
+            formError:true
         };
-    }
-
-    toggleForm = () => {
-        const isVisible = this.state.isFormVisible;
-        this.setState({ isFormVisible: !isVisible });
     }
 
     handleCancel = () => {
@@ -30,14 +26,49 @@ class ContactForm extends Component {
     }
 
     handleChange = event => {
+        
+        if(event.target.name !== 'userCompany'){
+            if(event.target.value.trim() === '') {
+                event.target.parentElement.classList.add("alert-validate");
+            } else {
+                event.target.parentElement.classList.remove("alert-validate");
+    
+            }    
+        }
+
         this.setState({
             [event.target.name]: event.target.value
-        });
+        }, () =>{this.validate()})
+    }
+
+    validate = () => {
+        let formError = true;
+        const {userName, feedback, userMail, userTelephone} = this.state;
+        debugger
+        if(userName !== '' && feedback !== '' && userMail !== '' && userTelephone !== '') {
+            formError = false;
+        } else {
+            formError = true
+        }    
+        this.setState({
+            formError
+        })
+    }
+
+    onBlur = event => {
+        if(event.target.value.trim() !== '') {
+            event.target.classList.add("has-val");
+        } else {
+            event.target.classList.remove("has-val");
+
+        }
     }
 
     handleSubmit = e => {
         e.preventDefault();
-        const {templateId} = this.props      
+        const {templateId} = this.props 
+        
+        
         window.emailjs
             .send(
                 'mailgun',
@@ -68,11 +99,22 @@ class ContactForm extends Component {
 
                 <div className="cont-contactBtn">
                     <div className={this.state.isFormVisible ? 'cont-flip' : 'cont-flip flipped'}>
-                        <div className='back'>
-                            <button onClick={() => this.toggleForm()} className="btn btn-white flip">CONTACT US
-                            </button>
-                            <div className="container contacts black-contacts">
-                                <div className="col-xs-12 col-sm-6">
+                    
+                        <div className="front">
+                            <Form handleSubmit={this.handleSubmit} 
+                                    formError={this.state.formError}
+                                  userName={this.state.userName}
+                                  onBlur={this.onBlur}
+                                  handleChange={this.handleChange}
+                                  feedback={this.state.feedback}
+                                  userCompany={this.state.userCompany}
+                                  userTelephone={this.state.userTelephone}
+                                  userMail={this.state.userMail}
+                                  isContainerStyle={this.props.isContainerStyle}                                  
+                                />                        
+                        </div>
+                        <div className="container contacts our-contacts">
+                                <div className="col-xs-12">
                                     <div className="share active">
                                         <div className="fabs" src="/instagram-logo.svg"><InstagramLogo></InstagramLogo></div>
                                         <div className="fabs"><FacebookLogo></FacebookLogo></div>
@@ -85,19 +127,6 @@ class ContactForm extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="front">
-                            <button onClick={() => this.toggleForm()} className="flip close">X</button>
-                            <Form handleSubmit={this.handleSubmit} 
-                                  userName={this.state.userName}
-                                  handleChange={this.handleChange}
-                                  feedback={this.state.feedback}
-                                  userCompany={this.state.userCompany}
-                                  userTelephone={this.state.userTelephone}
-                                  userMail={this.state.userMail}
-                                  isContainerStyle={this.props.isContainerStyle}                                  
-                                />                        
-                        </div>
                     </div>
                 </div>
             </section>

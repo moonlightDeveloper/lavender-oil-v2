@@ -2,15 +2,15 @@
     "navigation": {
         "home": "Home",
         "lavenderOil" : "Lavender oil",
-        "contact-1": "Contact"
+        "contact": "Contact"
     },
-    "home.page": {
-        "main.title.first.line": "Lavender",
-        "main.title.second.line": "Lavender",
-        "main.subtitele1": "manifacturer",
-        "main.subtitle2.first.line": "The gold of",
-        "main.subtitle2.second.line": "Tbulgaria",
-        "button.more": "Learn more",
+    "home-page": {
+        "main-title-first-line": "Lavender",
+        "main-title-second-line": "oil",
+        "main-subtitele1": "manifacturer",
+        "main-subtitle2-first-line": "The gold of",
+        "main-subtitle2-second-line": "Bulgaria",
+        "button-more": "Learn more",
         "header": {
             "section1": "A little about us",
             "section2": "The process",
@@ -19,7 +19,8 @@
         },
         "section1": {
             "title": "We've growth surrounded by lands of richness which was the reason for us to founded our company more than 15 years ago.",
-            "content": "Inspired by passion and admiration of the nature we've decided to provide a way for people to be able to have a touch of its beauties. We've choose lavender due to it's benefits for our bodies used for both cosmetically and therapeutically methods. During the years we've taken care of the control for the whole process of manufacturing lavender oil including creation of plantations of particular varieties, proper care, mowing,transportation."
+            "content": "Inspired by passion and admiration of the nature we've decided to provide a way for people to be able to have a touch of its beauties- We've choose lavender due to it's benefits for our bodies used for both cosmetically and therapeutically methods. During the years we've taken care of the control for the whole process of manufacturing lavender oil including creation of plantations of particular varieties, proper care, mowing,transportation.",
+            "second-quotes": "What we do, we do it with love!"
         },
         "section2": {
             "title": "Great ideas always have a beginning",
@@ -35,47 +36,58 @@
             "desk4": "Personal service"
         },
         "section4": {
-            "title.first.line": "the",
-            "end": "",
-            "title.second.line.end": "who",
-            "title2.second.line.end": "who",
-            "title.second.line": "The guy",
-            "title2.second.line": "The woman",
+            "title-first-line": "the",
+            "and": "and",
+            "title-second-line": "guy who",
+            "title2-second-line": "woman who",
+            "title3-second-line": "one who",
             "subtitle1": "Made it all possible",
             "subtitle2": "Speaks with you",
             "subtitle3": "Prepare the documents",
             "subtitle4": "Controls the oil production process"
         }
     },
-    "oil.page": {
-        "main.title.first.line": "Lavender",
-        "main.title.second.line": "oil",
-        "main.subtitle": "Made with pinch of love!",
-        "main.button": "See gallery",
-        "section1.title": "Our Lavender sorts",
+    "oil-page": {
+        "main-title-first-line": "Lavender",
+        "main-title-second-line": "oil",
+        "main-subtitle": "Made with pinch of love!",
+        "main-button": "See gallery",
+        "section1-title": "Our Lavender sorts",
         "title1": "Sevtopolis",
         "title2": "hebar",
         "title3": "hemus",
-        "section2.title": "gallery"
+        "section2-title": "Gallery"
     },
-    "contact.page": {
-        "main.title": "Bulgaria",
-        "sub.title": "Dobrich",
-        "section.title": "Contact us"
+    "contact-page": {
+        "main-title": "Bulgaria",
+        "sub-title": "Dobrich",
+        "section-title": "Contact us"
     },
-    "contact.form": {
+    "contact-form": {
         "button": "Contact us",
-        "company": "Company",
-        "company.name": "Magy and Seo - M&S",
-        "mail": "e-mail",
-        "name": "Name",
+        "company": "Company: Maggy and Seo - M&S",
+        "email": "E-mail: sales@lavender-oil.eu",
+        "mail-label": "Email",
+        "name-label": "Name",
+        "company-label": "Company",
         "telephone": "telephone",
         "textarea": "leave a message",
         "required": "is required",
-        "form.error": "Something went wrong",
-        "try.again" : "Please try again",
+        "form-error": "Something went wrong",
+        "try-again" : "Please try again",
         "success": "The mail was successfully send. We will reach you back soon!",
         "send": "send"
+    },
+    "seo":{
+        "title":{
+            "homepage":"Lavender oil from manifacturer",
+            "oilPage":"Lavender oil manifacturing in Bulgaria",
+            "contactPage": "Lavender oil manifacturer contacts"
+        },
+        "description":{
+            "homepage":"High quality lavender oil from manifacturer, competitive pricing",
+            "oilPage":"100% pure natural lavender oil, therapeutic qualities, International shipping.",
+            "contactPage": "100% pure natural lavender oil, therapeutic qualities, International shipping."
+        }
     }
-
 }

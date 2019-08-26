@@ -3,20 +3,68 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Form = props => {
-    const { handleSubmit, handleChange, userMail, userName, feedback, userCompany, userTelephone, isContainerStyle } = props;
+    const { handleSubmit, handleChange, userMail, userName, feedback, userCompany, userTelephone, onBlur, formError} = props;
     const { t } = useTranslation();
 
-    return <form className={`contact-form ${isContainerStyle? "container" : ""}`} action="" onSubmit={handleSubmit}>
-                <input className="gutter" type="text"
-                    placeholder={`${t('contact-form.name-label')}`} name="userName" value={userName} onChange={handleChange} />
-                <input name="userCompany" type="text" placeholder={`${t('contact-form.company-label')}`} onChange={handleChange} value={userCompany}/>
-                <input name="userTelephone" className="gutter" type="text" placeholder={`${t('contact-form.telephone')}`} value={userTelephone} onChange={handleChange} />
-                <input type="text" placeholder={`${t('contact-form.mail-label')}`} value={userMail} name="userMail" onChange={handleChange} />
-                <textarea name="feedback" id="tx" placeholder={`${t('contact-form.textarea')}`}  value={feedback} onChange={handleChange}></textarea>
-                <div class="g-recaptcha" data-sitekey="6LcM768UAAAAALhJLZjbcApG7UzZuoft9kArifqP"></div>
-                <br/>
-                <input type="submit" value={`${t('contact-form.send')}`} />
-            </form>
+    return (
+        <div className="container-contact2">
+            <div className="wrap-contact2">
+                <form className="contact2-form validate-form" onSubmit={handleSubmit}>
+                    <span className="contact2-form-title">
+                        Contact Us
+					</span>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div className="wrap-input2 validate-input" data-validate={`${t('contact-form.name-error')}`}>
+                                <input className="input2" type="text" name="userName" value={userName} onChange={handleChange} onBlur={onBlur} />
+                                <span className="focus-input2" data-placeholder={`${t('contact-form.name-label')}`}></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div className="wrap-input2 validate-input">
+                                <input className="input2" type="text" name="userCompany" value={userCompany} onChange={handleChange} onBlur={onBlur} />
+                                <span className="focus-input2" data-placeholder={`${t('contact-form.company-label')}`}></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div className="wrap-input2 validate-input" data-validate={`${t('contact-form.email-error')}`}>
+                                <input className="input2" type="email" value={userMail} name="userMail" onChange={handleChange} onBlur={onBlur} />
+                                <span className="focus-input2" data-placeholder={`${t('contact-form.mail-label')}`}></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div className="wrap-input2 validate-input" data-validate={`${t('contact-form.phone-error')}`}>
+                                <input className="input2" type="tel" pattern="\d+"  value={userTelephone} name="userTelephone" onChange={handleChange} onBlur={onBlur} />
+                                <span className="focus-input2" data-placeholder={`${t('contact-form.telephone')}`}></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="wrap-input2 validate-input" data-validate={`${t('contact-form.message-error')}`}>
+                        <textarea className="input2" name="feedback" id="tx" value={feedback} onChange={handleChange} onBlur={onBlur}></textarea>
+                        <span className="focus-input2" data-placeholder={`${t('contact-form.textarea')}`} ></span>
+                    </div>
+
+                    <div className="container-contact2-form-btn">
+                        <div className="wrap-contact2-form-btn">
+                            <div className={`contact2-form-bgbtn ${formError ? 'disabled' : ''}`}></div>
+                            <button disabled={formError} className="contact2-form-btn">
+                                Send Your Message
+							</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    )
+
+
 };
 
 export default Form;
